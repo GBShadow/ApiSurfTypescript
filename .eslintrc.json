@@ -20,6 +20,8 @@
   "rules": {
     "prettier/prettier": "error",
     "class-methods-use-this": "off",
+    "no-use-before-define":"off",
+    "import/no-duplicates": "off",
     "no-useless-constructor": "off",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-unused-vars": [
@@ -28,7 +30,7 @@
         "argsIgnorePattern": "_"
       }
     ],
-    "import/extensions": [
+  "import/extensions": [
       "error",
       "ignorePackages",
       {
@@ -38,15 +40,7 @@
   },
   "settings": {
     "import/resolver": {
-       "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
-      },
       "typescript": {}
+      }
     }
   }
-}
